@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bluetooth_data"
+    android:background="@color/black">
+
+
+    <EditText
+        android:id="@+id/editText_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/corners_rounded"
+        android:hint="                             type here to send" />
+    <Button
+        android:id="@+id/send_button_ID"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:text="TAP to SEND"
+        android:background="@drawable/corners_rounded"
+        android:layout_below="@id/editText_ID"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/ghs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RECEIVED DATA"
+        android:layout_below="@id/send_button_ID"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:layout_margin="20dp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textSize="20dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ghs"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textView_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:background="@color/cardview_light_background"
+            android:padding="10dp"
+            android:scrollHorizontally="true"
+            android:hint="                            data is shown here                         " />
+    </ScrollView>
+</RelativeLayout>
