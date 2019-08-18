@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.ColorSpace;
 import android.os.Handler;
+import android.renderscript.Type;
 import android.util.Log;
 import android.view.Display;
 import android.view.LayoutInflater;
@@ -61,6 +62,7 @@ public class My_Adapter extends RecyclerView.Adapter<My_Adapter.ViewHolder> {
     }
 
     public String s;
+    //private Type.CubemapFace cubemapFace;
 
     public My_Adapter(Context context, List<List_ITEM> list_items) {
         this.context = context;
